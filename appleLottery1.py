@@ -50,6 +50,10 @@ redExP = red / iterations
 yellowExP = yellow / iterations
 greenExP = green / iterations
 
+yellowTheor = 1 / 15
+redTheor = 6 / 15
+greenTheor = 8 / 15
+
 print("~~~~~~~~~~~~~~~~~~~~~~~~~")
 print("Yellow: ", yellow)
 print("Red: ", red)
@@ -59,3 +63,6 @@ print("Yellow Experimental Probability: ", yellowExP)
 print("Red Experimental Probability: ", redExP)
 print("Green Experimental Probability: ", greenExP)
 print("~~~~~~~~~~~~~~~~~~~~~~~~~")
+print("Yellow Theoretical Probability: ", yellowTheor)
+print("Red Theoretical Probability: ", redTheor)
+print("Green Theoretical Probability: ", greenTheor)
