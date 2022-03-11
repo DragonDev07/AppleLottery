@@ -3,6 +3,8 @@
 import random
 
 print("Hello! Welcome to the Apple Lottery. Please answer the questions below to get started.")
+print("In this lottery the numbers that are drawn CANNOT be identical!")
+print("Remember to choose different lottery numbers! So no [2, 2]!")
 print("~~~~~~~~~~~~~~~~~~~~~~~~~")
 
 iterations = int(input("How many rolls (iterations)? "))
@@ -21,8 +23,17 @@ yellow = 0
 red = 0
 green = 0
 
+num1 = 0
+num2 = 0
+
 for i in range(iterations):
-    nums.append([random.randint(1, 6), random.randint(1, 6)])
+    num1 = random.randint(1, 6    )    
+    num2 = random.randint(1, 6)
+
+    while(num2 == num1):
+        num2 = random.randint(1, 6)
+
+    nums.append([num1, num2])
 
 if(printData):
     print(nums)
